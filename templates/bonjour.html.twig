@@ -1,0 +1,13 @@
+{# Affichage d'une variable qui correspond au titre #}
+{# Variable qui sera définie dans le controleur #}
+{# Ce titre sera Affiché en MAJ #}
+<div>{{titre | upper }}</div>
+{# Ajout d'une itération pour = répétition #}
+{# Demande de répéter sur la variable array #}
+{# La variable array sera définie puis transmise par le controleur #}
+{# Chaque élément du tableau sera donc affiché entre 2 balise li #}
+<ul>
+    {% for item in array %}
+        <li>{{item}}</li>
+    {% endfor %}
+</ul>

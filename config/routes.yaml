@@ -1,3 +1,3 @@
 index:
-   path: /
+   path: /symfony
    controller: App\Controller\SymfonyController::Main
