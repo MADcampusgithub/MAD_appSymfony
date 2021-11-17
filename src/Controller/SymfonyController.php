@@ -10,10 +10,9 @@ class SymfonyController extends AbstractController
     public function Main(Request $request)
     {
         // Declaration et initialisation de $titre
-        $titre = "Liste des utilisateurs";
+        $titre = "Les parametres passé par l'url sont :";
         // Déclaration et initialisation du tableau stockant une liste d'utilisateur
-        $listeUtilisateur = ["Jean", "Pierre", "Louis", "Olivier"];
-        var_dump($request->query); die;
+        $listeUtilisateur = $request->query->All();
         
         // Appel de la méthode render avec deux parametre le titre et le array
         return $this->render("bonjour.html.twig", ["titre" => $titre, "array" => $listeUtilisateur]);
