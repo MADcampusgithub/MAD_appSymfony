@@ -1,10 +1,20 @@
 {# Affiche la premiere variable en minuscule si il y a moins de 10 charactères #}
+<p>
+Première variable (min si < 10) : 
 {% if var1 | length < 10 %}
 	{{ var1 | lower }}
+{% else %}
+    {{ var1 }}
 {% endif %}
+</p>
 
 {# Affiche la second variable en majuscule si il y au moins 10 charactères #}
+<p>
+Deuxième variable (maj si >= 10) : 
 {% if var2 | length >= 10 %}
-	{{ var1 | upper }}
+	{{ var2 | upper }}
+{% else %}
+    {{ var2 }}
 {% endif %}
+</p>
 

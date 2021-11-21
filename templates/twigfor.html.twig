@@ -1,9 +1,15 @@
 {# Affiche tous les devoirs de la liste des devoirs #}
+<p>
+Liste des devoirs : 
 {% for devoir in listDevoirs %}
 	{{ devoir }}
 {% endfor %}
+</p>
 
 {# Affiche une suite de nombre de 0 à 9 #}
+<p>
+Liste de nombres : </br>
 {% for i in 0..10 %}
-    {{ i }}
+    * {{ i }} </br>
 {% endfor %}
+</p>

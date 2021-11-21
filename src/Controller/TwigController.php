@@ -9,17 +9,17 @@ class TwigController extends AbstractController
 {
     public function If(Request $request)
     {
-        return $this->render("twigig.html.twig", ["var1" => "VaRiAbLe1", "var2" => "SeCoNdEVaRiAbLe"]);
+        return $this->render("twigif.html.twig", ["var1" => "VaRiAbLe1", "var2" => "SeCoNdEVaRiAbLe"]);
     }
 
     public function For(Request $request)
     {
-        
+        return $this->render("twigfor.html.twig", ["listDevoirs" => ["DM Maths", "Synthèse Ang"]]);
     }
 
     public function Set(Request $request)
     {
-        
+        return $this->render("twigset.html.twig");
     }
 }
 ?>
