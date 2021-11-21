@@ -1,0 +1,15 @@
+{# Déclare et initialise la variable devoir avec 'DM Maths' #}
+{% set devoir = 'DM Maths' %}
+
+{# Affiche le devoir #}
+{{ devoir }}
+
+{# Déclare et initialise le tableau de devoirs contenant 'DM Maths' et 'Synthèse Ang' #}
+{% set listDevoirs = ['DM Maths', 'Synthèse Ang'] %}
+
+{# Affiche les devoirs de la liste sous forme de liste html #}
+<ul>
+    {% for unDevoir in listDevoirs %}
+        <li>{{ unDevoir }}</li>
+    {% endfor %}
+</ul>

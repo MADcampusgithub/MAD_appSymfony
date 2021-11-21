@@ -1,0 +1,25 @@
+<?php
+namespace App\Controller;
+
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController; 
+
+class TwigController extends AbstractController
+{
+    public function If(Request $request)
+    {
+        return $this->render("twigig.html.twig", ["var1" => "VaRiAbLe1", "var2" => "SeCoNdEVaRiAbLe"]);
+    }
+
+    public function For(Request $request)
+    {
+        
+    }
+
+    public function Set(Request $request)
+    {
+        
+    }
+}
+?>
