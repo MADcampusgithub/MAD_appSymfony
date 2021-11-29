@@ -1,15 +1,15 @@
-index:
-   path: /symfony
-   controller: App\Controller\SymfonyController::Main
+# index:
+#    path: /symfony
+#    controller: App\Controller\SymfonyController::Main
 
-twigif:
-   path: /twig/if
-   controller: App\Controller\TwigController::If
+# twigif:
+#    path: /twig/if
+#    controller: App\Controller\TwigController::If
 
-twigfor:
-   path: /twig/for
-   controller: App\Controller\TwigController::For
+# twigfor:
+#    path: /twig/for
+#    controller: App\Controller\TwigController::For
 
-twigset:
-   path: /twig/set
-   controller: App\Controller\TwigController::Set
+# twigset:
+#    path: /twig/set
+#    controller: App\Controller\TwigController::Set
