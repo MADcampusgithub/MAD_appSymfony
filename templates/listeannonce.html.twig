@@ -1,0 +1,17 @@
+{# Affiche tous les devoirs de la liste des devoirs #}
+<h1>Liste des annonces</h1>
+
+<table>
+{% for annonce in listeAnnonce %}
+	<tr>
+		<td><a href="{{ path('detailAnnonce', {'id': annonce.id }) }}">{{ annonce.titre }}</a></td>
+		<td>{{ annonce.auteur }}</td>
+	<tr>
+{% endfor %}
+</table>
+
+<a href="{{ path("ajouterAnnonce") }}" style="text-decoration: none;">
+	<button name="ajouterannonce">Ajouter une annonce</button>
+</a>
+
+

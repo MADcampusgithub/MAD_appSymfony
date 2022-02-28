@@ -1,0 +1,29 @@
+<h1>Détail de l'annonce {{ annonce.id }}</h1>
+
+<table>
+    <tr>
+        <td>Titre :</td>
+        <td>{{ annonce.titre }}</td>
+    </tr>
+    <tr>
+        <td>Auteur :</td>
+        <td>{{ annonce.auteur }}</td>
+    </tr>
+    <tr>
+        <td>Contenu :</td>
+        <td>{{ annonce.contenu }}</td>
+    </tr>
+</table>
+
+{% if annonce.image is not null %}
+    <p><img src="/img/{{ annonce.image.url }}"></p>
+{% endif %}
+
+
+<a href="{{ path('modifierAnnonce', {'id': annonce.id }) }}" style="text-decoration: none;">
+    <input type="button" value="Modifier">
+</a>
+
+<a href="{{ path('supprimerAnnonce', {'id': annonce.id }) }}" style="text-decoration: none;">
+    <input type="button" value="Supprimer">
+</a>
