@@ -13,6 +13,24 @@
         <td>Contenu :</td>
         <td>{{ annonce.contenu }}</td>
     </tr>
+    {% if annonce.categorie.id != 0 %}
+        <tr>
+            <td>Catégorie :</td>
+            <td>{{ annonce.categorie.libelle }}</td>
+        </tr>
+    {% endif %}
+
+    {% if annonce.livraisons|length != 0 %}
+        <tr>
+            <td>Livraison :</td>
+            <td><ul>
+            {% for l in annonce.livraison %}
+                <li>{{ l.libelle }}</li>
+            {% endfor %}
+            </ul></td>
+        </tr>
+    {% endif %}
+    
 </table>
 
 {% if annonce.image is not null %}
